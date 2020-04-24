@@ -90,12 +90,15 @@ function hasConnection()
 $( document ).on( "keyup", ".numeric_only", function() {
   this.value = this.value.replace(/[^0-9\.]/g,'');
 });	 
-
+var admobid = {
+banner: 'ca-app-pub-6871330764548204/6787711262',
+autoShow:true
+};
 /*START DEVICE READY*/
 document.addEventListener("deviceready", function() {
 	
 	try {
-		
+		AdMob.createBanner(admobid);
 	   navigator.splashscreen.hide();
 	
 	   device_platform = device.platform;
