@@ -92,7 +92,7 @@ var FabElement = function (_BaseElement) {
     // since these do not access the children
     var _this = _possibleConstructorReturn(this, (FabElement.__proto__ || _Object$getPrototypeOf(FabElement)).call(this));
 
-    _this._hide();
+    _this.hide();
     _this.classList.add(defaultClassName);
 
     contentReady(_this, function () {
@@ -130,7 +130,7 @@ var FabElement = function (_BaseElement) {
       var _this2 = this;
 
       _setImmediate(function () {
-        return _this2._show();
+        return _this2.show();
       });
     }
   }, {
@@ -154,10 +154,7 @@ var FabElement = function (_BaseElement) {
   }, {
     key: '_show',
     value: function _show() {
-      if (!this._manuallyHidden) {
-        // if user has not called ons-fab.hide()
-        this._toggle(true);
-      }
+      this.show();
     }
   }, {
     key: '_hide',
@@ -165,7 +162,7 @@ var FabElement = function (_BaseElement) {
       var _this3 = this;
 
       _setImmediate(function () {
-        return _this3._toggle(false);
+        return _this3.hide();
       });
     }
   }, {
@@ -247,14 +244,6 @@ var FabElement = function (_BaseElement) {
   }, {
     key: 'toggle',
     value: function toggle() {
-      var action = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : !this.visible;
-
-      this._manuallyHidden = !action;
-      this._toggle(action);
-    }
-  }, {
-    key: '_toggle',
-    value: function _toggle() {
       var action = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : !this.visible;
 
       var isBottom = (this.getAttribute('position') || '').indexOf('bottom') >= 0;

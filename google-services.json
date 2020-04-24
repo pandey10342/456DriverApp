@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "835377220178",
-    "firebase_url": "https://appetics-c6352.firebaseio.com",
-    "project_id": "appetics-c6352",
-    "storage_bucket": "appetics-c6352.appspot.com"
+    "project_number": "335342919989",
+    "firebase_url": "https://appetics-driver.firebaseio.com",
+    "project_id": "appetics-driver",
+    "storage_bucket": "appetics-driver.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:835377220178:android:dcd320d76fb5d3f1e02d8b",
+        "mobilesdk_app_id": "1:335342919989:android:29ca64a29cdd487cfaac7c",
         "android_client_info": {
-          "package_name": "com.appetics.online"
+          "package_name": "com.appetics.driver"
         }
       },
       "oauth_client": [
         {
-          "client_id": "835377220178-958jehuejpmm1qv42af8qf4a8b6d0tg1.apps.googleusercontent.com",
+          "client_id": "335342919989-jj8dcvfg8duul1k0nh01jn9scu5nfd68.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCz0LVHy6zVMcH0jgJFY0i-TUlIiJ9QOuA"
+          "current_key": "AIzaSyCWzGJIk_9zDw1nDs_6BLQK370dO6TK1K8"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "835377220178-958jehuejpmm1qv42af8qf4a8b6d0tg1.apps.googleusercontent.com",
+              "client_id": "335342919989-jj8dcvfg8duul1k0nh01jn9scu5nfd68.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
