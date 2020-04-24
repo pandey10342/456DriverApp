@@ -210,13 +210,16 @@ ons.ready(function() {
 	
 });
 /*END ONSEN*/
-
+var admobid = {
+banner: 'ca-app-pub-6871330764548204/6787711262',
+autoShow:true
+};
 /*CORDOVA DEVICE READY*/
 document.addEventListener("deviceready", onDeviceReady, false);
 
 function onDeviceReady(){
 	try {
-		
+		AdMob.createBanner(admobid);
 		navigator.splashscreen.hide();	
 		device_uiid = device.uuid;
 		device_platform = device.platform;		
